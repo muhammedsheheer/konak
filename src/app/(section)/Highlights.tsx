@@ -5,7 +5,7 @@ import React from "react";
 
 const Highlights: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#000] px-8 py-8 md:px-20 md:py-20">
+    <section className="h-full w-full bg-[#000] px-12 py-8 md:px-20 md:py-20">
       <div className="flex h-full w-full flex-col items-center justify-center gap-10 md:gap-16">
         <div className="flex flex-col items-center justify-center gap-8 md:ml-20 md:flex-row md:gap-20">
           <h1 className="text-center font-playfair text-5xl font-[500] capitalize text-[#fff] md:text-7xl md:tracking-[-4px]">
@@ -25,10 +25,10 @@ const Highlights: React.FC = () => {
                 width={677}
                 height={503}
                 alt="image"
-                className="h-[300px] w-full rounded-t-full"
+                className="h-auto w-full rounded-t-full"
               />
             </div>
-            <h6 className="font-italiana text-center text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
+            <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
               English <br />
               breakfast
             </h6>
@@ -40,10 +40,10 @@ const Highlights: React.FC = () => {
                 width={677}
                 height={503}
                 alt="image"
-                className="h-[300px] w-full rounded-t-full"
+                className="h-auto w-full rounded-t-full"
               />
             </div>
-            <h6 className="font-italiana text-center text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
+            <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
               Turkish <br />
               Breakfast
             </h6>
@@ -55,10 +55,10 @@ const Highlights: React.FC = () => {
                 width={677}
                 height={503}
                 alt="image"
-                className="h-[300px] w-full rounded-t-full"
+                className="h-auto w-full rounded-t-full"
               />
             </div>
-            <h6 className="font-italiana text-center text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
+            <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
               Sandwiches
             </h6>
           </div>
@@ -69,10 +69,10 @@ const Highlights: React.FC = () => {
                 width={677}
                 height={503}
                 alt="image"
-                className="h-[300px] w-full rounded-t-full"
+                className="h-auto w-full rounded-t-full"
               />
             </div>
-            <h6 className="font-italiana text-center text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
+            <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
               Salads
             </h6>
           </div>
