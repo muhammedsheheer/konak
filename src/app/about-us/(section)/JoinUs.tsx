@@ -7,7 +7,7 @@ const JoinUs = ({}) => {
     <section
       className="relative flex h-screen w-full items-center justify-center opacity-90"
       style={{
-        backgroundImage: `url('/images/about-us/image7.jpg')`,
+        backgroundImage: `url('/images/about-us/image7.webp')`,
         backgroundSize: "cover",
       }}
     >
@@ -19,7 +19,7 @@ const JoinUs = ({}) => {
             Unforgettable Feast
           </h1>
           <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#ffff]">
-            Whether it`s a cozy dinner or a grand gathering, Levant invites you
+            Whether it’s a cozy dinner or a grand gathering, Konak invites you
             to embark on an extraordinary culinary journey. From authentic
             Middle Eastern flavors to hand-selected ingredients, every dish is a
             tribute to our rich heritage and passion for excellence. Immerse

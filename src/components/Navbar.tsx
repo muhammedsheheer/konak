@@ -30,6 +30,11 @@ const Navbar = ({
     setIsOpen(!isOpen);
   };
 
+  const imageSrc =
+    pathname === "/menu"
+      ? "/images/home/hero/logof.png"
+      : "/images/home/hero/logo.png";
+
   return (
     <nav
       className={cn(
@@ -43,7 +48,7 @@ const Navbar = ({
           <div>
             <Link href={"/"}>
               <Image
-                src={"/images/home/hero/logo.png"}
+                src={imageSrc}
                 width={281}
                 height={74}
                 alt="logo"
@@ -54,42 +59,42 @@ const Navbar = ({
           <div className="flex flex-row items-center justify-center gap-20">
             <Link
               href={"/"}
-              className={
-                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
-              }
+              className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
+                pathname === "/menu" ? "text-[#fff]" : "text-[#323232]"
+              }`}
             >
               Home
             </Link>
             <Link
               href={"/menu"}
-              className={
-                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
-              }
+              className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
+                pathname === "/menu" ? "text-[#fff]" : "text-[#323232]"
+              }`}
             >
               Menu
             </Link>
-            <Link
+            {/* <Link
               href={""}
               className={
                 "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
               }
             >
               Products
-            </Link>
+            </Link> */}
             <Link
               href={"/about-us"}
-              className={
-                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
-              }
+              className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
+                pathname === "/menu" ? "text-[#fff]" : "text-[#323232]"
+              }`}
             >
               About
             </Link>
 
             <Link
               href={"/contact"}
-              className={
-                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
-              }
+              className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
+                pathname === "/menu" ? "text-[#fff]" : "text-[#323232]"
+              }`}
             >
               Contact us
             </Link>

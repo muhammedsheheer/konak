@@ -12,7 +12,12 @@ const Follow: React.FC = () => {
             Connect
           </h1>
           <Button className="rounded-full bg-[#fff] px-7 py-7 font-playfair text-2xl font-[400] uppercase text-[#323232] hover:bg-[#d7cece] md:px-10 md:py-8 md:text-5xl md:tracking-[5px]">
-            <Link href={""}>@konakcafewilmslow</Link>
+            <Link
+              href={"https://www.instagram.com/konakcafewilmslow/"}
+              target="_blank"
+            >
+              @konakcafewilmslow
+            </Link>
           </Button>
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:gap-2">

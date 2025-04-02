@@ -91,13 +91,12 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/SZAkP72"} target="_blank">
                     <p className="text-[#000]">
-                      9 Barlow Moor Rd, Didsbury, Manchester
-                      <br /> M20 6TN, United Kingdom
+                      8 Grove St, Wilmslow SK9 <br /> 1DR, United Kingdom
                     </p>
                   </Link>
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/SZAkP72"} target="_blank">
                     <p className="flex items-center gap-2 text-sm text-[#000]">
                       <span>Get Direction</span>
                       <ArrowRight className="text-[#000]" />
@@ -122,19 +121,25 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+01614230494" className="text-[#000]">
-                    0161 423 04 94{" "}
+                  <Link href="tel:+441625537799" className="text-[#000]">
+                    +44 1625 537799
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://www.instagram.com/konakcafewilmslow/"}
+                  target="_blank"
+                >
                   <Icons.instagram className="text-[#000]" />
                 </Link>
-                <Link href={""} target="_blank">
-                  <Icons.unknown className="text-[#000]" />
+                <Link
+                  href={"https://www.facebook.com/konakcafewilmslow"}
+                  target="_blank"
+                >
+                  <Icons.facebook className="text-[#000]" />
                 </Link>
-                <Link href={""} target="_blank">
+                <Link href={"https://g.co/kgs/SZAkP72"} target="_blank">
                   <Icons.google className="text-[#000]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
@@ -232,7 +237,7 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.19196832903!2d-2.2318719!3d53.4175839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb3df9225b6c3%3A0x365fe3576a0f6abb!2sLevant%20Elixir%20of%20Co-Existence%20Restaurant!5e1!3m2!1sen!2sin!4v1742976588803!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.9848012725483!2d-2.2309072!3d53.3273565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d75f1d5b4b5%3A0x1a87281fa23cc4a5!2sKonak%20Cafe!5e1!3m2!1sen!2sin!4v1743591410183!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -243,7 +248,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image4.jpg"
+          src="/images/about-us/image4.webp"
           alt="bottom"
           width={966}
           height={96}

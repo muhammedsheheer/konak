@@ -32,7 +32,7 @@ const Footer = ({}) => {
                     <Link
                       className="flex flex-col text-center font-poppins text-xs font-[500] uppercase text-[#fff] md:text-start"
                       target="_blank"
-                      href={""}
+                      href={"https://g.co/kgs/SZAkP72"}
                     >
                       8 Grove St, Wilmslow SK9 <br /> 1DR, United Kingdom
                     </Link>
@@ -40,7 +40,7 @@ const Footer = ({}) => {
                   <span>
                     <Link
                       className="font-poppins text-xs font-[500] uppercase text-[#fff]"
-                      href={""}
+                      href={"tel:+441625537799"}
                     >
                       +44 1625 537799
                     </Link>
@@ -56,16 +56,22 @@ const Footer = ({}) => {
                 </div>
               </div>
               <div className="flex flex-row items-center gap-2 md:gap-4 md:pt-6">
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://www.instagram.com/konakcafewilmslow/"}
+                  target="_blank"
+                >
                   <Icons.instagram className="text-[#fff]" />
                 </Link>
-                <Link href={""} target="_blank">
+                {/* <Link href={""} target="_blank">
                   <Icons.unknown className="text-[#fff]" />
-                </Link>
-                <Link href={""} target="_blank">
+                </Link> */}
+                <Link href={"https://g.co/kgs/SZAkP72"} target="_blank">
                   <Icons.google className="text-[#fff]" />
                 </Link>
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://www.facebook.com/konakcafewilmslow"}
+                  target="_blank"
+                >
                   <Icons.facebook className="text-[#fff]" />
                 </Link>
               </div>
@@ -83,12 +89,12 @@ const Footer = ({}) => {
               >
                 Menu
               </Link>
-              {/* <Link
+              <Link
                 href={"/about-us"}
                 className="font-poppins text-xs font-[700] uppercase tracking-[2.4px] text-[#fff]"
               >
                 About
-              </Link> */}
+              </Link>
 
               {/* <Link
                 href={""}
