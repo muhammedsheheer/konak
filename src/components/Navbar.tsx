@@ -149,7 +149,7 @@ export default Navbar;
 
 const EqualizerIcon: React.FC = () => {
   return (
-    <div className="equalizer-icon rotate text-[#C0A58A]">
+    <div className="equalizer-icon rotate text-[#000]">
       <div className="bar"></div>
       <div className="bar"></div>
       <div className="bar"></div>
