@@ -260,7 +260,7 @@ export default function Menu() {
           </div>
         </div>
         {/* Categories */}
-        <div className="sticky top-0 z-10 flex items-center bg-menubackground px-4 py-2">
+        <div className="sticky top-0 z-10 flex items-center bg-[#000] px-4 py-2">
           <div
             ref={categoryNavRef}
             className="hidden-scrollbar flex overflow-x-auto py-2"

@@ -75,9 +75,6 @@ const Contact = ({}) => {
         <div className="flex w-full flex-col lg:flex-row">
           <div className="flex w-full flex-col gap-8 bg-[#fff] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
-              <p className="font-bai text-lg leading-[4px] text-[#000]">
-                Contact Us
-              </p>
               <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#000] lg:text-5xl">
                 Get in
                 <br /> Touch
