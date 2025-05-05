@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -31,28 +32,28 @@ const data = [
 
 const Menu: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#fff] py-0 md:py-12">
+    <section className="h-full w-full bg-[#111] py-0 md:py-12">
       <div className="pb-6 md:pb-10">
         <div className="flex flex-row overflow-hidden">
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
-          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#000] md:text-8xl">
+          <h1 className="text-center font-playfair text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
             KONAK{" "}
           </h1>
         </div>
@@ -61,7 +62,13 @@ const Menu: React.FC = () => {
         {/* Left Image */}
 
         {/* Menu Items Section */}
-        <div className="relative md:w-[50%]">
+        <motion.div
+          className="relative md:w-[50%]"
+          initial={{ opacity: 0, y: 50, scale: 0.8 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <div className="absolute inset-0 ml-16 flex w-full flex-col items-start justify-center gap-4 px-4 md:ml-32 md:px-0">
             {data.map((item, index) => (
               <div
@@ -94,9 +101,15 @@ const Menu: React.FC = () => {
             alt="frame"
             className="h-[900px] w-full md:h-[850px]"
           />
-        </div>
+        </motion.div>
 
-        <div className="relative md:w-[50%]">
+        <motion.div
+          className="relative md:w-[50%]"
+          initial={{ opacity: 0, y: 50, scale: 0.8 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <div className="absolute inset-0 ml-16 flex w-full flex-col items-start justify-center gap-4 px-4 md:ml-32 md:px-0">
             {data.map((item, index) => (
               <div
@@ -129,7 +142,7 @@ const Menu: React.FC = () => {
             alt="frame"
             className="h-[900px] w-full md:h-[850px]"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Highlights: React.FC = () => {
   return (
@@ -20,12 +21,16 @@ const Highlights: React.FC = () => {
         <div className="flex h-full w-full flex-col gap-8 md:flex-row">
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[25%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
+              <motion.img
                 src={"/images/home/highlights/image1.png"}
                 width={677}
                 height={503}
                 alt="image"
                 className="h-auto w-full rounded-t-full"
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
               />
             </div>
             <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
@@ -35,12 +40,16 @@ const Highlights: React.FC = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[25%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
+              <motion.img
                 src={"/images/home/highlights/image2.png"}
                 width={677}
                 height={503}
                 alt="image"
                 className="h-auto w-full rounded-t-full"
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
               />
             </div>
             <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
@@ -50,12 +59,16 @@ const Highlights: React.FC = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[25%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
+              <motion.img
                 src={"/images/home/highlights/image3.png"}
                 width={677}
                 height={503}
                 alt="image"
                 className="h-auto w-full rounded-t-full"
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
               />
             </div>
             <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">
@@ -64,12 +77,16 @@ const Highlights: React.FC = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[25%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
+              <motion.img
                 src={"/images/home/highlights/image4.png"}
                 width={677}
                 height={503}
                 alt="image"
                 className="h-auto w-full rounded-t-full"
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
               />
             </div>
             <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#fff] md:text-3xl md:tracking-[1.8px]">

@@ -5,18 +5,19 @@ import { useRestaurant } from "@/context/RestaurantContext";
 import type { EmblaOptionsType } from "embla-carousel";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 const Special = ({}) => {
   const { modelData } = useRestaurant();
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#fff] py-12">
+    <section className="relative flex h-full w-full justify-center bg-[#111] py-12">
       <div className="absolute right-[13%] top-[17%] hidden md:block">
         <Link href={"/menu"}>
           <Button
             className={
-              "rounded-none border border-[#000] bg-[#000] px-7 py-6 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
+              "rounded-none border border-[#fff] bg-[#fff] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#111] hover:bg-[#111] hover:text-[#fff]"
             }
           >
             View menu
@@ -24,7 +25,7 @@ const Special = ({}) => {
         </Link>
       </div>
       <div className="absolute right-[10%] top-[35%] hidden md:block">
-        <p className="w-full max-w-[280px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#000] md:text-start md:text-base">
+        <p className="w-full max-w-[280px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:text-start md:text-base">
           Explore our menu for a delicious selection of freshly prepared meals,
           from hearty breakfasts to indulgent treats.
         </p>
@@ -35,10 +36,16 @@ const Special = ({}) => {
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="flex flex-col items-center justify-center gap-2">
               <div className="flex flex-col items-center justify-center gap-4 pb-4 md:flex-row md:gap-0 md:pb-8">
-                <h6 className="text-center font-playfair text-5xl font-[400] capitalize tracking-[-4px] text-[#000] md:text-7xl">
+                <motion.h6
+                  className="text-center font-playfair text-5xl font-[400] capitalize tracking-[-4px] text-[#fff] md:text-7xl"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   Signatures
-                </h6>
-                <p className="w-full max-w-[350px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#000] md:hidden md:text-start md:text-base">
+                </motion.h6>
+                <p className="w-full max-w-[350px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:hidden md:text-start md:text-base">
                   Explore our menu for a delicious selection of freshly prepared
                   meals, from hearty breakfasts to indulgent treats.
                 </p>
@@ -46,7 +53,7 @@ const Special = ({}) => {
                   <Link href={"/menu"}>
                     <Button
                       className={
-                        "rounded-none border border-[#000] bg-[#000] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
+                        "rounded-none border border-[#fff] bg-[#fff] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#111] hover:bg-[#111] hover:text-[#fff]"
                       }
                     >
                       View menu

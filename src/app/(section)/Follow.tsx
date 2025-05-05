@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Follow: React.FC = () => {
   return (
@@ -21,7 +22,13 @@ const Follow: React.FC = () => {
           </Button>
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:gap-2">
-          <div className="w-full md:w-[20%]">
+          <motion.div
+            className="w-full md:w-[20%]"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/follow/image1.png"}
               width={281}
@@ -29,8 +36,14 @@ const Follow: React.FC = () => {
               alt="frame"
               className="h-[350px] w-full md:h-[400px]"
             />
-          </div>
-          <div className="w-full md:w-[20%]">
+          </motion.div>
+          <motion.div
+            className="w-full md:w-[20%]"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/follow/image2.png"}
               width={281}
@@ -38,8 +51,14 @@ const Follow: React.FC = () => {
               alt="frame"
               className="h-[350px] w-full md:h-[400px]"
             />
-          </div>
-          <div className="w-full md:w-[20%]">
+          </motion.div>
+          <motion.div
+            className="w-full md:w-[20%]"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/follow/image6.png"}
               width={281}
@@ -47,8 +66,14 @@ const Follow: React.FC = () => {
               alt="frame"
               className="h-[350px] w-full md:h-[400px]"
             />
-          </div>
-          <div className="w-full md:w-[20%]">
+          </motion.div>
+          <motion.div
+            className="w-full md:w-[20%]"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/follow/image4.png"}
               width={281}
@@ -56,8 +81,14 @@ const Follow: React.FC = () => {
               alt="frame"
               className="h-[350px] w-full md:h-[400px]"
             />
-          </div>
-          <div className="w-full md:w-[20%]">
+          </motion.div>
+          <motion.div
+            className="w-full md:w-[20%]"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/follow/image5.png"}
               width={281}
@@ -65,7 +96,7 @@ const Follow: React.FC = () => {
               alt="frame"
               className="h-[350px] w-full md:h-[400px]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
