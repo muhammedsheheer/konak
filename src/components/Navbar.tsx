@@ -119,7 +119,7 @@ const Navbar = ({
           <div>
             <Link href={"/"}>
               <Image
-                src={"/images/home/hero/logo.png"}
+                src={"/images/home/hero/logof.png"}
                 width={281}
                 height={74}
                 alt="logo"
@@ -149,7 +149,7 @@ export default Navbar;
 
 const EqualizerIcon: React.FC = () => {
   return (
-    <div className="equalizer-icon rotate text-[#000]">
+    <div className="equalizer-icon rotate text-[#fff]">
       <div className="bar"></div>
       <div className="bar"></div>
       <div className="bar"></div>

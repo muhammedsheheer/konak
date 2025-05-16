@@ -29,40 +29,40 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               className="w-28"
             />
           </SheetTitle>
-          <SheetDescription className="flex w-full flex-col items-start justify-start gap-7 pt-14">
+          <SheetDescription className="flex w-full flex-col items-center justify-center gap-7 pt-14">
             <Link
               href="/"
-              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Home
             </Link>
             <Link
               href="/menu"
-              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Menu
             </Link>
             <Link
               href="/about-us"
-              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Contact
             </Link>
             <Link
               href="/table-booking"
-              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Table Booking
             </Link>
             {/* <Link
               href=""
-              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Products
             </Link> */}

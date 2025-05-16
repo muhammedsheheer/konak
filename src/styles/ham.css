@@ -9,7 +9,7 @@
 .bar {
   width: 4px;
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
   animation: equalizer-animation 1s infinite;
 }
 
