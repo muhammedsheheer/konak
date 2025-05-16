@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Highlights: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#000] px-12 py-8 md:px-20 md:py-20">
+    <section className="h-full w-full bg-[#c29732] px-12 py-8 md:px-20 md:py-20">
       <div className="flex h-full w-full flex-col items-center justify-center gap-10 md:gap-16">
         <div className="flex flex-col items-center justify-center gap-8 md:ml-20 md:flex-row md:gap-20">
           <h1 className="text-center font-playfair text-5xl font-[500] capitalize text-[#fff] md:text-7xl md:tracking-[-4px]">

@@ -12,7 +12,7 @@ const OPTIONS: EmblaOptionsType = { loop: true };
 const Special = ({}) => {
   const { modelData } = useRestaurant();
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#111] py-12">
+    <section className="relative flex h-full w-full justify-center bg-[#c29732] py-12">
       <div className="absolute right-[13%] top-[17%] hidden md:block">
         <Link href={"/menu"}>
           <Button
@@ -24,12 +24,12 @@ const Special = ({}) => {
           </Button>
         </Link>
       </div>
-      <div className="absolute right-[10%] top-[35%] hidden md:block">
+      {/* <div className="absolute right-[10%] top-[35%] hidden md:block">
         <p className="w-full max-w-[280px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:text-start md:text-base">
           Explore our menu for a delicious selection of freshly prepared meals,
           from hearty breakfasts to indulgent treats.
         </p>
-      </div>
+      </div> */}
       <div className="pointer-events-none absolute left-0 top-0 h-full w-full overflow-hidden"></div>
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
         <div className="flex w-full flex-col items-center justify-center gap-3 md:flex-row">

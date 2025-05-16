@@ -33,7 +33,7 @@ const Navbar = ({
   const imageSrc =
     pathname === "/table-booking"
       ? "/images/home/hero/logof.png"
-      : "/images/home/hero/logo.png";
+      : "/images/home/hero/logof.png";
 
   return (
     <nav
@@ -60,7 +60,7 @@ const Navbar = ({
             <Link
               href={"/"}
               className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
-                pathname === "/table-booking" ? "text-[#fff]" : "text-[#323232]"
+                pathname === "/table-booking" ? "text-[#fff]" : "text-[#fff]"
               }`}
             >
               Home
@@ -68,7 +68,7 @@ const Navbar = ({
             <Link
               href={"/menu"}
               className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
-                pathname === "/table-booking" ? "text-[#fff]" : "text-[#323232]"
+                pathname === "/table-booking" ? "text-[#fff]" : "text-[#fff]"
               }`}
             >
               Menu
@@ -76,7 +76,7 @@ const Navbar = ({
             {/* <Link
               href={""}
               className={
-                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
+                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#fff] hover:underline"
               }
             >
               Products
@@ -84,7 +84,7 @@ const Navbar = ({
             <Link
               href={"/about-us"}
               className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
-                pathname === "/table-booking" ? "text-[#fff]" : "text-[#323232]"
+                pathname === "/table-booking" ? "text-[#fff]" : "text-[#fff]"
               }`}
             >
               About
@@ -93,7 +93,7 @@ const Navbar = ({
             <Link
               href={"/contact"}
               className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
-                pathname === "/table-booking" ? "text-[#fff]" : "text-[#323232]"
+                pathname === "/table-booking" ? "text-[#fff]" : "text-[#fff]"
               }`}
             >
               Contact us

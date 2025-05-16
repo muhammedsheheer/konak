@@ -4,29 +4,47 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    name: "ROASTED LAMB RUMP",
-    description: "Grilled lamb cutlets, pomegranate glaze, butternut squash",
-    price: 25,
+    name: "Arabic Ice Cream",
+    price: 4.0,
   },
   {
-    name: "PAN SEARED SEA BASS",
-    description: "Saffron and mussel's broth, new potatoes, edamame beans",
-    price: 38,
+    name: "Cheesecake",
+    price: 4.0,
   },
   {
-    name: "KING PRAWNS AND LOBSTER",
-    description: "Creamy saffron, sauce Vierge",
-    price: 38,
+    name: "Cupcakes",
+    price: 3.0,
   },
   {
-    name: "BEEF BURGER MEAL",
-    description: "Classic greek salad, barrel aged feta cheese, bread",
-    price: 32,
+    name: "Fayseleh",
+    price: 3.0,
   },
   {
-    name: "ROASTED LAMB RUMP",
-    description: "Grilled lamb cutlets, pomegranate glaze, butternut squash",
-    price: 25,
+    name: "Mahal Biya",
+    price: 3.0,
+  },
+];
+
+const data1 = [
+  {
+    name: "Apple Juice",
+    price: 4.0,
+  },
+  {
+    name: "Berry Kiwi Punch",
+    price: 4.0,
+  },
+  {
+    name: "Bright Morning",
+    price: 4.0,
+  },
+  {
+    name: "Citrus Tropic",
+    price: 4.0,
+  },
+  {
+    name: "Green Duo",
+    price: 4.0,
   },
 ];
 
@@ -69,7 +87,7 @@ const Menu: React.FC = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <div className="absolute inset-0 ml-16 flex w-full flex-col items-start justify-center gap-4 px-4 md:ml-32 md:px-0">
+          <div className="absolute inset-0 ml-6 flex w-full flex-col items-start justify-center gap-4 px-4 md:ml-12 md:px-0">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -77,18 +95,13 @@ const Menu: React.FC = () => {
               >
                 {/* Name & Price */}
                 <div className="flex w-full items-center">
-                  <h1 className="w-[40%] font-poppins text-base font-[400] uppercase tracking-[2.5px] text-white md:text-lg">
+                  <h1 className="w-[70%] font-poppins text-base font-[400] uppercase tracking-[2.5px] text-white md:w-[60%] md:text-lg">
                     {item.name}
                   </h1>
                   <h1 className="w-[20%] text-right font-poppins text-base font-[400] uppercase tracking-[0.812px] text-white md:text-lg">
-                    ${item.price}
+                    £{item.price}
                   </h1>
                 </div>
-
-                {/* Description */}
-                <p className="w-[60%] font-poppins text-sm font-[300] text-white md:text-base">
-                  {item.description}
-                </p>
               </div>
             ))}
           </div>
@@ -99,7 +112,7 @@ const Menu: React.FC = () => {
             width={281}
             height={74}
             alt="frame"
-            className="h-[900px] w-full md:h-[850px]"
+            className="h-[550px] w-full md:h-[850px]"
           />
         </motion.div>
 
@@ -110,26 +123,21 @@ const Menu: React.FC = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <div className="absolute inset-0 ml-16 flex w-full flex-col items-start justify-center gap-4 px-4 md:ml-32 md:px-0">
-            {data.map((item, index) => (
+          <div className="absolute inset-0 ml-6 flex w-full flex-col items-start justify-center gap-4 px-4 md:ml-12 md:px-0">
+            {data1.map((item, index) => (
               <div
                 key={index}
                 className="flex w-full flex-col items-start justify-start gap-2 pb-6 pt-6"
               >
                 {/* Name & Price */}
                 <div className="flex w-full items-center">
-                  <h1 className="w-[40%] font-poppins text-base font-[400] uppercase tracking-[2.5px] text-white md:text-lg">
+                  <h1 className="w-[70%] font-poppins text-base font-[400] uppercase tracking-[2.5px] text-white md:w-[60%] md:text-lg">
                     {item.name}
                   </h1>
                   <h1 className="w-[20%] text-right font-poppins text-base font-[400] uppercase tracking-[0.812px] text-white md:text-lg">
-                    ${item.price}
+                    £{item.price}
                   </h1>
                 </div>
-
-                {/* Description */}
-                <p className="w-[60%] font-poppins text-sm font-[300] text-white md:text-base">
-                  {item.description}
-                </p>
               </div>
             ))}
           </div>
@@ -140,7 +148,7 @@ const Menu: React.FC = () => {
             width={281}
             height={74}
             alt="frame"
-            className="h-[900px] w-full md:h-[850px]"
+            className="h-[550px] w-full md:h-[850px]"
           />
         </motion.div>
       </div>

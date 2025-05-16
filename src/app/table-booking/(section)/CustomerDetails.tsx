@@ -44,8 +44,8 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
       <div className="flex w-full flex-col gap-3 bg-primary/30 px-12 py-6">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="flex w-full flex-col gap-2">
-            <p className="text-semibold text-[#000]">Date & Time</p>
-            <p className="font-light text-[#000]">
+            <p className="text-semibold text-[#d8c39a]">Date & Time</p>
+            <p className="font-light text-[#d8c39a]">
               {form.watch("date")
                 ? format(form.watch("date"), "EEE MMM dd yyyy")
                 : "No date selected"}
@@ -53,8 +53,8 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
             </p>
           </div>
           <div className="flex w-full flex-col gap-2">
-            <p className="text-semibold text-[#000]">No of Guests</p>
-            <p className="font-light text-[#000]">
+            <p className="text-semibold text-[#d8c39a]">No of Guests</p>
+            <p className="font-light text-[#d8c39a]">
               {form.watch("guests")
                 ? `${form.watch("guests")} Guests`
                 : "no number of guests selected"}
@@ -62,7 +62,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           </div>
           <div className="flex w-full items-center md:justify-center">
             <p
-              className="w-fit cursor-pointer border-b-[1px] border-b-[black] text-[#000]"
+              className="w-fit cursor-pointer border-b-[1px] border-b-[black] text-[#d8c39a]"
               onClick={() => setpage(0)}
             >
               Change Selection
@@ -70,7 +70,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           </div>
         </div>
       </div>
-      <p className="w-full text-2xl font-semibold text-[#000]">
+      <p className="w-full text-2xl font-semibold text-[#d8c39a]">
         Complete your request
       </p>
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -79,11 +79,11 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-[#000]">Your Name</FormLabel>
+              <FormLabel className="text-[#d8c39a]">Your Name</FormLabel>
               <FormControl>
                 <Input
                   {...field}
-                  className="h-12 border-[#000] bg-transparent text-[#000]"
+                  className="h-12 border-[#d8c39a] bg-transparent text-[#d8c39a]"
                 />
               </FormControl>
               <FormMessage />
@@ -96,12 +96,12 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-[#000]">Your Email</FormLabel>
+              <FormLabel className="text-[#d8c39a]">Your Email</FormLabel>
               <FormControl>
                 <Input
                   {...field}
                   type="email"
-                  className="h-12 border-[#000] bg-transparent text-[#000]"
+                  className="h-12 border-[#d8c39a] bg-transparent text-[#d8c39a]"
                 />
               </FormControl>
               <FormMessage />
@@ -114,19 +114,18 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-[#000]">Phone Number</FormLabel>
+              <FormLabel className="text-[#d8c39a]">Phone Number</FormLabel>
               <FormControl>
                 <Input
                   {...field}
                   type="tel"
-                  className="h-12 border-[#000] bg-transparent text-[#000]"
+                  className="h-12 border-[#d8c39a] bg-transparent text-[#d8c39a]"
                 />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        
       </div>
 
       <FormField
@@ -134,11 +133,11 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
         name="request"
         render={({ field }) => (
           <FormItem className="w-full">
-            <FormLabel className="text-[#000]">Special Request</FormLabel>
+            <FormLabel className="text-[#d8c39a]">Special Request</FormLabel>
             <FormControl>
               <Textarea
                 {...field}
-                className="min-h-[100px] border-[#000] bg-transparent text-[#000] placeholder:text-[#000]"
+                className="min-h-[100px] border-[#d8c39a] bg-transparent text-[#d8c39a] placeholder:text-[#d8c39a]"
                 placeholder="Enter any special requests or dietary requirements..."
               />
             </FormControl>
@@ -149,7 +148,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
       <div className="flex w-full justify-center">
         <Button
           type="submit"
-          className="w-fit bg-[#000] px-7 py-6 text-[#fff] hover:bg-[#222] md:float-right md:w-fit"
+          className="w-fit bg-[#d8c39a] px-7 py-6 text-[#fff] hover:bg-[#e4c587] md:float-right md:w-fit"
           disabled={bookTableMutation.isPending}
         >
           {bookTableMutation.isPending ? "Booking..." : "Book A Table"}

@@ -312,7 +312,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="embla-menu__container">
               {slides.map((modelData, index) => (
                 <div className="embla-menu__slide" key={index}>
-                  <div className="embla-menu__slide__number h-full w-full rounded-t-full bg-[#fff] px-4 py-20">
+                  <div className="embla-menu__slide__number h-full w-full px-4 py-20">
                     <ModelBox
                       src={modelData.modelPath.glb}
                       width="400px"
@@ -358,7 +358,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           //   borderRadius: "187.5rem 187.5rem 0rem 0rem",
           //   background: "linear-gradient(180deg, #161616 0%, #070707 100%)",
           // }}
-          style={{ borderRadius: "300px 0px 0px 0px", background: "#000" }}
+          style={{
+            borderRadius: "300px 0px 0px 0px",
+            background: "linear-gradient(135deg, #c29732, #b07e23)",
+          }}
         />
         <div className="absolute left-1/2 top-0 translate-x-16 transform sm:translate-x-24 md:translate-x-28">
           {/* <div className="relative flex size-24 items-center justify-center">

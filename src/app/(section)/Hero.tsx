@@ -42,9 +42,21 @@ const Hero: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#fff]"
+      className="relative flex h-screen w-full items-center justify-center overflow-hidden"
     >
-      <h1 className="px-2 text-center font-playfair text-5xl font-[500] capitalize text-[#000] md:text-8xl md:tracking-[-5px]">
+      <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
+        <video
+          className="min-h-full min-w-full object-cover"
+          style={{ objectPosition: "center" }}
+          src="/videos/bg.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
+      </div>
+      <div className="absolute inset-0 z-0 bg-black/50" />
+      <h1 className="z-40 px-2 text-center font-playfair text-5xl font-[500] capitalize text-[#fff] md:text-8xl md:tracking-[-5px]">
         {inView &&
           [...text].map((letter, i) => (
             <motion.span

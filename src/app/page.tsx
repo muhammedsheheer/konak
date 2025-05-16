@@ -18,8 +18,8 @@ export default function HomePage() {
         <Hero />
         <Authentic />
         <Highlights />
-        <Special />
         <Menu />
+        <Special />
         <Reserve />
         <Reviews />
         <Follow />

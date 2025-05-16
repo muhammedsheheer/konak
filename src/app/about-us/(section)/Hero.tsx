@@ -4,17 +4,17 @@ const Hero = ({}) => {
   return (
     <section
       id="hero"
-      className="flex w-full items-center justify-center bg-[#fff] py-6 lg:py-12"
+      className="flex w-full items-center justify-center bg-[#000] py-6 lg:py-12"
     >
       <div className="relative flex min-h-[100vh] w-full items-center justify-center">
         <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">
           <div className="flex w-full items-center justify-center lg:w-1/2">
             <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
-              <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-[#000] lg:text-6xl">
+              <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-[#d8c39a] lg:text-6xl">
                 Welcome to Konak
                 <br /> A Symphony of Flavors
               </h1>
-              <p className="font-manrope font-normal text-[#000]">
+              <p className="font-manrope font-normal text-[#d8c39a]">
                 At Konak, every dish is a celebration of rich traditions and
                 bold flavors. From the finest ingredients to time-honored
                 recipes, we bring you an unforgettable dining experience
