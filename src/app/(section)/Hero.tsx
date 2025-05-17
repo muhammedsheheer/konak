@@ -48,11 +48,12 @@ const Hero: React.FC = () => {
         <video
           className="min-h-full min-w-full object-cover"
           style={{ objectPosition: "center" }}
-          src="/videos/bg.mp4"
+          src="https://d8q1b3smcycac.cloudfront.net/Konak/konak-web.mp4"
           autoPlay
           loop
           muted
           playsInline
+          poster="https://d8q1b3smcycac.cloudfront.net/Konak/konak-thumbnail.png"
         ></video>
       </div>
       <div className="absolute inset-0 z-0 bg-black/50" />
