@@ -2,10 +2,19 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "./SideBar";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = ({
   position = "static",
@@ -13,6 +22,8 @@ const Navbar = ({
   position?: "static" | "fixed" | "absolute";
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [positioned, setPositioned] = React.useState("bottom");
+
   useEffect(() => {
     const d = localStorage.getItem("positiond");
     if (d !== null) {
@@ -65,14 +76,60 @@ const Navbar = ({
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href={"/menu"}
               className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
                 pathname === "/table-booking" ? "text-[#fff]" : "text-[#fff]"
               }`}
             >
               Menu
-            </Link>
+            </Link> */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  className={`text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] hover:underline ${
+                    pathname === "/table-booking"
+                      ? "text-[#fff]"
+                      : "text-[#fff]"
+                  }`}
+                  variant="link"
+                >
+                  Menu
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-60">
+                {/* <DropdownMenuLabel>Panel Position</DropdownMenuLabel> */}
+                <DropdownMenuSeparator />
+                <DropdownMenuRadioGroup
+                  value={positioned}
+                  onValueChange={setPositioned}
+                >
+                  <DropdownMenuRadioItem value="menu">
+                    <Link className="uppercase text-[#000]" href={"/menu"}>
+                      Main Menu
+                    </Link>
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="Main_Menu">
+                    <Link
+                      className="uppercase text-[#000]"
+                      href={"/pdf/Main_Menu.pdf"}
+                      target="_blank"
+                    >
+                      Food Menu
+                    </Link>
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="Take_Out_Menu">
+                    <Link
+                      className="uppercase text-[#000]"
+                      href={"/pdf/Take_Out_Menu.pdf"}
+                      target="_blank"
+                    >
+                      Take Out Menu
+                    </Link>
+                  </DropdownMenuRadioItem>
+                </DropdownMenuRadioGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
             {/* <Link
               href={""}
               className={

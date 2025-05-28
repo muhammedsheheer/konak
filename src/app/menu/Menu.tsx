@@ -251,7 +251,7 @@ export default function Menu() {
           }}
         >
           <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end px-12 py-12">
-            <Link href="" target="_blank">
+            <Link href="/pdf/Main_Menu.pdf" target="_blank">
               <Button className="flex items-center justify-center gap-2 rounded-none bg-menuprimary px-5 py-6 text-lg font-[600] text-menuforeground hover:bg-buttonhover">
                 <Image src="/images/pdf.svg" width={23} height={29} alt="pdf" />
                 <span className="leading-none">Download Menu</span>

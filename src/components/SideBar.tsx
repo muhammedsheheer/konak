@@ -1,3 +1,4 @@
+"use client";
 import {
   Sheet,
   SheetContent,
@@ -8,13 +9,16 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
-import { type FC } from "react";
+import { useState, type FC } from "react";
 
 interface SidebarProps {
   children: React.ReactNode;
 }
 
 const Sidebar: FC<SidebarProps> = ({ children }) => {
+  const [showSubMenu, setShowSubMenu] = useState(false);
+  const toggleSubMenu = () => setShowSubMenu((prev) => !prev);
+
   return (
     <Sheet>
       <SheetTrigger asChild>{children}</SheetTrigger>
@@ -36,12 +40,46 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
             >
               Home
             </Link>
-            <Link
+            <button
+              onClick={toggleSubMenu}
+              className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
+            >
+              <span>Menu</span>
+            </button>
+
+            {showSubMenu && (
+              <div className="ml-6 flex w-full flex-col gap-6 pb-4 text-sm text-white">
+                <Link
+                  className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
+                  href="/menu"
+                  // className="hover:underline"
+                >
+                  Main Menu
+                </Link>
+                <Link
+                  className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
+                  href={"/pdf/Main_Menu.pdf"}
+                  target="_blank"
+                  // className="hover:underline"
+                >
+                  Food Menu
+                </Link>
+                <Link
+                  className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
+                  href={"/pdf/Take_Out_Menu.pdf"}
+                  target="_blank"
+                  // className="hover:underline"
+                >
+                  Take Out Menu
+                </Link>
+              </div>
+            )}
+            {/* <Link
               href="/menu"
               className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Menu
-            </Link>
+            </Link> */}
             <Link
               href="/about-us"
               className="flex w-full justify-center p-0 font-playfair text-2xl font-normal text-[#323232]"
